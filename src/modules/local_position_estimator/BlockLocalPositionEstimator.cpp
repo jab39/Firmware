@@ -19,7 +19,7 @@ static const char *msg_label = "[lpe] ";	// rate of land detector correction
 
 BlockLocalPositionEstimator::BlockLocalPositionEstimator() :
 	ModuleParams(nullptr),
-	WorkItem(MODULE_NAME, px4::wq_configurations::att_pos_ctrl),
+	WorkItem(MODULE_NAME, px4::wq_configurations::navigation_and_position_ctrl),
 
 	// this block has no parent, and has name LPE
 	SuperBlock(nullptr, "LPE"),
